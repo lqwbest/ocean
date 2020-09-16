@@ -16,5 +16,6 @@
 
     <modules>
         <module>stream-mybatis-xml</module>
+        <module>stream-mybatis-annotation</module>
     </modules>
 </project>

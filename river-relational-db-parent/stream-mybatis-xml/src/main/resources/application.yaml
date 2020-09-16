@@ -1,0 +1,21 @@
+spring:
+  # datasource 数据源配置内容
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/db_test?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: lqw2btt1314!
+
+# mybatis 配置内容
+mybatis:
+  # 配置 MyBatis 配置文件路径
+  config-location: classpath:config/mybatis-config.xml
+  # 配置 Mapper XML 地址
+  mapper-locations: classpath:mapper/*.xml
+  # 配置数据库实体包路径
+  type-aliases-package: org.ocean.river.stream.mybatis.xml.dataobject
+
+logging:
+  level:
+    # 根据你的项目设定(打印sql)
+    org.ocean.river.stream.mybatis.xml.mapper: debug
